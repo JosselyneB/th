@@ -24,7 +24,3 @@ Route::post('/login', [AuthController::class, 'login'])->name('login');
 Route::get('/test', function () {
     return response()->json(['message' => 'API funcionando correctamente']);
 });
-
-
-$credentials = ['email' => 'admin@example.com', 'password' => 'admin1234'];
-Auth::attempt($credentials);
